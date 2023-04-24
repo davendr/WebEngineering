@@ -23,8 +23,16 @@ p {
     color: red;
   }
 
+.second {
+  text-align: center;
+  color: red;
+}
+
 /*only paragraphs can use this class*/
 p.center {
     text-align: center;
     color: red;
   }
+
+/*adding more then one class or para you can use them like this*/
+<h1 class="center second">Hello World!</h1>
