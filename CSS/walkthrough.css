@@ -1,0 +1,30 @@
+/*  This is a walkthrough for the documentation
+*
+*   First note is IDs and classes
+*/
+
+/*this specifies only on the paragraphs*/
+p {
+    text-align: center;
+    color: red;
+  }
+
+/*the html element then looks like this <h1 id="para1">... <p id="para1"*/
+ #para1 {
+    text-align: center;
+    color: red;
+}
+
+/* this one is a class. /*
+
+/* a class can be specified like this to an html element. Using= <h1 class="center">.. */
+.center {
+    text-align: center;
+    color: red;
+  }
+
+/*only paragraphs can use this class*/
+p.center {
+    text-align: center;
+    color: red;
+  }
