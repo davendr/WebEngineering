@@ -240,3 +240,25 @@ a:hover {
 a:link {
     text-decoration: none;
 }
+
+
+/*  section thirdteen
+*   exercise one */
+ul {
+    list-style-type: square;    
+}
+
+/*  exercise two */
+ul {
+    list-style-image: url("example.png");
+}
+
+/*  exercise three */
+ul {
+    list-style-type: none;
+}
+
+/*  exercise four */
+ul {
+    list-style-type: upper-roman;
+}

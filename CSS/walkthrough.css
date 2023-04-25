@@ -117,3 +117,76 @@ p {
 *   Margin - Clears an area outside the border. The margin is transparent (outter cycle)
 *
 */
+
+
+/* link states
+*
+*   a:link - a normal, unvisited link
+*   a:visited - a link the user has visited
+*   a:hover - a link when the user mouses over it
+*   a:active - a link the moment it is clicked
+*
+* use a link as a button!         */
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  border: 4px dotted;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+
+/* this works as a class. you can use it with <a class="two"...*/
+a.two.hover, a.two.active {
+  background-color: yellow;
+}
+
+
+
+/* there are also different types of list-styles
+*
+*   list-style-type: circle;
+*   list-style-type: square;
+*   list-style-type: upper-roman;
+*   list-style-type: lower-alpha;
+*
+* using an image as dot
+*   list-style-image: url('example.gif');
+*
+* then there is the style-position. Outside means, the text is fixed next to the dots. Inside means new line goes below the dot.
+*   list-style-position: outside;
+*   list-style-position: inside;
+*
+* this list-shorthand property is used to declare more properties at once
+*   list-style: squar inside url("...");
+*/
+
+/* as used before but this only focusses on ordered lists */
+ol {
+  background: #f44336;
+  padding: 10px;
+}
+
+/* This focusses on the part next to the dots. So the list is red around and hast an inner blueviolet cycle.*/
+ol li{
+  background: blueviolet;
+}
+
+
+/* tables need to be styled to get into good shape.
+*   some examples are listened below.
+*/
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
