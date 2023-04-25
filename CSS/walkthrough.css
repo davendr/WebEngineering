@@ -190,3 +190,15 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+
+
+
+/* There are also different types of displaying.
+* there is a different between display:block and display:none or inline.
+* in line means next to each other in one row. "Block" means as a block.
+*
+*   display: none;
+*   visibility: hidden;
+*
+* switching from hidden to display is made via .js
+*/

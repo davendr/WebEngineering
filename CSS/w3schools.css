@@ -262,3 +262,29 @@ ul {
 ul {
     list-style-type: upper-roman;
 }
+
+
+/*  section fourteen 
+*   exercise one */
+table, th, td {
+    border: 2px solid green;
+}
+
+/*  exercise two */
+table {
+    border-collapse: collapse;
+}
+
+/*  exercise three 
+* <table style="width:100%"> */
+
+/*  exercise four */
+td {
+    text-align: right;
+}
+
+/*  exercise five & six */
+th {
+    padding: 15px;
+    background-color: lightblue;
+}
