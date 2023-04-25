@@ -3,7 +3,7 @@
 *   First note is IDs and classes
 */
 
-/*this specifies only on the paragraphs*/
+/*this specifies on all paragraphs (only)*/
 p {
     text-align: center;
     color: red;
@@ -35,4 +35,53 @@ p.center {
   }
 
 /*adding more then one class or para you can use them like this*/
-<h1 class="center second">Hello World!</h1>
+/*  <h1 class="center second">Hello World!</h1> */
+
+
+
+/*  css can be set external, internal or inline.
+*
+*
+*
+*   External Style
+*   <head> <link =rel"stylesheet" href="mystyle.css"> </head>
+*   
+*   Inline would be within the html-tag as a style. 
+*   <h1 style="color:blue";>...</h1>
+*   
+*   Inside
+*   <head>
+*     <style>           
+*/
+body {background-color: linen;}
+h1 { color:maroon;
+    margin-left: 40px;}
+/* </style> </head> */
+
+
+/* example color RGB
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+
+    Hex
+    <h1 style="background-color:#ff6347;">...</h1>
+
+    RGBA(255,99,71,0.2)   A = opacity 
+*/
+/* opacity can also be used like here */
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+7
+
+/* Different forms of background
+background-color
+bpdy {background-image: url("paper.gif");
+      background-repeat: no-repeat-x;
+      background-position: right top;}
+
+background-attachment       - this will fix an element even tho you scroll. If it's fixed the element will move down while scrolling. "scroll" will let it go away scrolling down
+
+background-position
+background (shorthand property)
+*/
