@@ -158,7 +158,38 @@ div {
     outline-color: red;
 }
 
-/* exercise three */
+/*  exercise three */
 div {
     outline: 4px dotted red;
+}
+
+
+/*  section ten 
+*   exercise one */
+p {
+    color:red;
+}
+
+/*  exercise two */
+p {
+    text-align: center;
+}
+
+/*  exercise three */
+a {
+    text-decoration: none;
+}
+
+/*  exercise four */
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-transform: capitalize;
+}
+
+/*  exercise five */
+p {
+    text-indent: 20px;
 }
