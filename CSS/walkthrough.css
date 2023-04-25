@@ -3,10 +3,11 @@
 *   First note is IDs and classes
 */
 
-/*this specifies on all paragraphs (only)*/
+/*this specifies on all paragraphs (only)
+* important will use that color instead of any other that i might set even inline.*/
 p {
     text-align: center;
-    color: red;
+    color: red !important;
   }
 
 /*the html element then looks like this <h1 id="para1">... <p id="para1"*/
@@ -84,4 +85,35 @@ background-attachment       - this will fix an element even tho you scroll. If i
 
 background-position
 background (shorthand property)
+*/
+
+/*Demonstration of the different border styles:*/
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+/* border-radius makes the border rounded! */
+p {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+
+
+/* CSS Box-Model 
+*
+*   Content - The content of the box, where text and images appear (middle)
+*   Padding - Clears an area around the content. The padding is transparent (first cycle)
+*   Border - A border that goes around the padding and content (second cycle)
+*   Margin - Clears an area outside the border. The margin is transparent (outter cycle)
+*
 */
