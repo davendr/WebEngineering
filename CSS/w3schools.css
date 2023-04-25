@@ -24,3 +24,26 @@ p {
 h1, p {  
     color: red;
 }
+
+
+/*  section two
+*   exercise one */
+
+/*  <link rel="stylesheet" href="mystyle.css"> */
+
+/*  exercise two */
+<style>
+body{
+    background-color:red;
+}
+</style>
+
+
+/* exercise three */
+
+<body style="background-color: red">
+
+/* exercise four */
+p {
+    color: red;
+}
