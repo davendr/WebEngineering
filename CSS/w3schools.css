@@ -212,3 +212,31 @@ h1 {
     font-weight: bold;
     font-variant: small-caps;
 }
+
+
+/*  section twelve
+*   exercise one */
+a {
+    color: red;
+}
+
+/*  exercise two */
+a:hover {
+    color: aquamarine;
+}
+
+/*  exercise three */
+a:visited {
+    color: aquamarine;
+}
+
+/*  exercise three */
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:link {
+    text-decoration: none;
+}
