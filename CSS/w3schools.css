@@ -113,3 +113,20 @@ h1 {
 h1 {
     margin: auto;
 }
+
+
+/*  section six
+*   exercise one */
+h1 {
+    padding-top: 30px;
+}
+
+/*   exercise two */
+h1 {
+    padding: 30px;
+}
+
+/*   exercise one */
+h1 {
+    padding: 40px, 10px;
+}
