@@ -3,7 +3,6 @@
 /*  section one 
 *   exercise one*/
 
-<style>
 p {
     color: red;
 }
@@ -32,16 +31,15 @@ h1, p {
 /*  <link rel="stylesheet" href="mystyle.css"> */
 
 /*  exercise two */
-<style>
 body{
     background-color:red;
 }
-</style>
+
 
 
 /* exercise three */
 
-<body style="background-color: red">
+/* <body style="background-color: red"> */
 
 /* exercise four */
 p {
@@ -51,22 +49,19 @@ p {
 
 /*  section three
 *   exercise one */
-
 h1 {
     background-color: lightblue;
 }
 
 /* exercise two to four */
-<style>
     body {
         background-image:url("basicimage.gif");
         background-repeat: repeat-y;
         background-position: top right;
     }
-</style>
+
 
 /* exercise five */
-<style>
     body {
         background-image: url("img_tree.png");
         background-attachment: fixed;
@@ -75,27 +70,46 @@ h1 {
 
 /*  section four 
 *   exercise one */
-
 p {
     border: 4px dotted red;
 }
 
-/* exercise two */
+/*  exercise two */
 p {
     border-style: dotted;
     border-color: red;
     border-width: 4px;
 }
 
-/* exercise three */
+/*  exercise three */
 p {
     border-left-style: groove;
     border-radius: 5px;
 }
 
-/* exercise four */
-
+/*  exercise four */
 p {
     border: 2px solid red;
     border-radius: 5px;
+}
+
+/*  section five
+*   exercise one */
+h1 {
+    margin-left: 20px;
+}
+
+/*  exercise two */
+h1 {
+    margin: 20px 40px;
+}
+
+/*  exercise three */
+h1 {
+    margin: 20px 15px 25px 10px;
+}
+
+/*  exercise four */
+h1 {
+    margin: auto;
 }
