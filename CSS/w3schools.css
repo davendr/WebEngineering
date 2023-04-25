@@ -151,4 +151,14 @@ div {
 
 
 /*  section nine
-*   exercise one */
+*   exercise one & two */
+div {
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: red;
+}
+
+/* exercise three */
+div {
+    outline: 4px dotted red;
+}
