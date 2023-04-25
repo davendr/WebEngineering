@@ -47,3 +47,27 @@ body{
 p {
     color: red;
 }
+
+
+/*  section three
+*   exercise one */
+
+h1 {
+    background-color: lightblue;
+}
+
+/* exercise two to four */
+<style>
+    body {
+        background-image:url("basicimage.gif");
+        background-repeat: repeat-y;
+        background-position: top right;
+    }
+</style>
+
+/* exercise five */
+<style>
+    body {
+        background-image: url("img_tree.png");
+        background-attachment: fixed;
+    }
