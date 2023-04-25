@@ -1,0 +1,26 @@
+/* Exercises css - w3schools */
+
+/*  section one 
+*   exercise one*/
+
+<style>
+p {
+    color: red;
+}
+
+/* exercise two */
+
+
+#para1 {
+    color:red;
+}
+
+/* exercise three */
+.colortext {
+    color: red;
+}
+
+/* exercise four */
+h1, p {  
+    color: red;
+}
