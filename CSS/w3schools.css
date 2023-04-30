@@ -389,3 +389,28 @@ h1 {
     position: absolute;
     right: 0px;
 }
+
+
+/*  section twenty
+*   exercise one */
+div p {
+    color: red;
+}
+
+/*  exercise two 
+*   immediate children of div */
+div > p {
+    color: red;
+}
+
+/*  excercise three 
+*   directly after a div -> + */
+div + p {
+    color: red;
+}
+
+/*  exercise four
+*   siblings */
+div ~ p {
+    color:aliceblue;    
+}
