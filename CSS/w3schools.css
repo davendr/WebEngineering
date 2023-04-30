@@ -379,3 +379,13 @@ h1 {
     height: 70px;
     overflow-x: scroll;
 }
+
+
+/*  section nineteen
+*   exercise one & two */
+.intro {
+    width: 200px;
+    margin: auto;
+    position: absolute;
+    right: 0px;
+}
