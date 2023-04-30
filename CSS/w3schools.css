@@ -288,3 +288,28 @@ th {
     padding: 15px;
     background-color: lightblue;
 }
+
+
+/*  section fiveteen 
+*   exercise one */
+
+h1 {
+    visibility: hidden;
+}
+
+/*  exercise two */
+h1 {
+    visibility: none;
+}
+
+/*  exercise three */
+li {
+    display: inline;
+}
+
+/*  exercise four */
+strong {
+    display: block;
+}
+
+
