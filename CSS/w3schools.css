@@ -414,3 +414,26 @@ div + p {
 div ~ p {
     color:aliceblue;    
 }
+
+
+/*  section twenty-one
+*   exercise one */
+a:hover {
+    background-color: red;
+}
+
+/*  exercise two
+*   using a class + hover */
+.master:hover {
+    background-color: red;
+}
+
+/*  exercise three */
+p:first-child {
+    background-color: greenyellow;
+}
+
+/*  exercise four */
+input:focus {
+    background-color: blueviolet;
+}
