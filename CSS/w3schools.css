@@ -292,7 +292,6 @@ th {
 
 /*  section fiveteen 
 *   exercise one */
-
 h1 {
     visibility: hidden;
 }
@@ -313,3 +312,28 @@ strong {
 }
 
 
+/*  section sixteen
+*   exercise one */
+h1 {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+}
+
+/*  exersice two */
+h1 {
+    position: relative;
+    top: 50px;
+}
+
+/*  exercise three */
+h1 {
+    position: absolute;
+    top: 50px;
+}
+
+/*  exercise four */
+.myheader {
+    position: relative;
+    top: 50px;
+}
