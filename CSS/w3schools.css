@@ -457,3 +457,18 @@ p::before {
 p::after {
     content: url("thisimage.png");
 }
+
+
+/*  section twentythree
+*   exercise one */
+img {
+    opacity: 0,5;
+}
+
+/*  exercise two */
+/*  image shows at hover */
+img:hover {
+    opacity: 1;
+}
+
+
