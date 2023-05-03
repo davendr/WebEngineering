@@ -536,3 +536,38 @@ div {
     border-image-slice: 30;
 }
 
+
+/*  section twentyseven
+*   exercise one */
+body {
+    background-image: url("img1.gif"), url("img22.gif");
+}
+
+/*  exercise two */
+body {
+    background-image: url("peter1.png");
+    background-size: 100 80;
+    background-repeat: no-repeat;
+}
+
+/*  exercise three */
+body {
+    background-image: url('img1.png'), url('img2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;
+}
+
+/*  exercise four */
+#example1 {
+    padding: 20px;
+    background-image: url('img.gif');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+#example2 {
+    border: 10px dotted red;
+    padding: 20px;
+    background-color: yellow;
+    background-clip: border-box;
+}
