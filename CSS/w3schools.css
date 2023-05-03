@@ -520,3 +520,19 @@ div {
     background: navy;
     border-bottom-left-radius: 10px;
 }
+
+
+/*  section twentysix
+*   exercise one */
+div {
+    border: 10px solid transparent;
+    border-image: url(w3schools.png) 30 pound;
+}
+
+/*  exercise two */
+div {
+    border-image-source: url(w3schools.png);
+    border-image-repeat: stretch;
+    border-image-slice: 30;
+}
+
