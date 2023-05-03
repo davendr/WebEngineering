@@ -738,3 +738,30 @@ div {
     transform: rotateY(90deg);
 }
 
+
+/*  section thirtyfive
+*   exercise one, two & three */
+div {
+    width: 100px;
+    height: 100px;
+    background: rgb(222, 147, 222);
+    transition: width 2s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+/*  excercise four */
+div {
+    width: 100px;
+    height: 100px;
+    background: rgb(172, 22, 22);
+    transition: background 2s, transform 2s;
+}
+
+/*  exercise five */
+div {
+    width: 100px;
+    height: 100px;
+    background:#265bcd;
+    transition: width 2s ease-in-out 0.5;
+}
