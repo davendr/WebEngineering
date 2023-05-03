@@ -506,3 +506,17 @@ img[title$="flower"] {
 img[title*="flower"] {
     border: 5px solid green;
 }
+
+
+/*  section twentyfive 
+*   exercise one */
+div {
+    background: greenyellow;
+    border-radius: 10px;
+}
+
+/*  exercise two */
+div {
+    background: navy;
+    border-bottom-left-radius: 10px;
+}
