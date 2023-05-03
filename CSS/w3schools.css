@@ -594,3 +594,34 @@ h1 {
     background-color: rgb(255,0,0);
     opacity: 0.3;
 }
+
+/*  section twentynine
+*   exercise one & two */
+div {
+    background-image: linear-gradient(to right, white, green)
+}
+
+/*  exercise three */
+div {
+    background-image: linear-gradient(to left, white, green)
+}
+
+/*  exercise four */
+div {
+    background-image: linear-gradient(to bottom right, white, green)
+}
+
+/*  exercise five */
+div {
+    background-image: linear-gradient(70deg, white, greenyellow)
+}
+
+/*  exercise six */
+div {
+    background-image: radial-gradient(white, green)
+}
+
+/*  exercise seven */
+div {
+    background-image: radial-gradient(circle, white, blue)
+}
