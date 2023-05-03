@@ -765,3 +765,71 @@ div {
     background:#265bcd;
     transition: width 2s ease-in-out 0.5;
 }
+
+
+/*  section thirtysix
+*   exercise one */
+div {
+    width: 100px;
+    height: 100px;
+    background-color:#265bcd;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+@keyframes example{
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+
+/*  exercise two */
+div {
+    width: 100px;
+    height: 100px;
+    background-color:#265bcd;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keycframes example{
+    0% {left: 0px; top: 0px;}
+    25% {left: 0px; top: 200px;}
+    50% {left: 200px; top: 200px;}
+    75% {left: 200px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+
+/*  exercise three to five */
+div {
+    width: 100px;
+    height: 100px;
+    background: color #141414;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    0% {background-color: #abc123;}
+    50% {background-color: lightseagreen}
+    100% {background-color: lightgreen}
+}
+
+/*  exercise six */
+div {
+    width: 100px;
+    height: 100px;
+    background: color red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    0% {background-color: #abc123; left: 0px}
+    50% {background-color: lightseagreen; left: 200px}
+    100% {background-color: lightgreen; left: 0px}
+}
