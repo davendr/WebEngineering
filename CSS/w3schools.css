@@ -472,3 +472,37 @@ img:hover {
 }
 
 
+/*  section twentyfour
+*   exercise one */
+a[target] {
+    background-color: red;
+}
+
+/*  exercise two */
+a[target="blank"] {
+    background-color: bisque;
+}
+
+/*  exercise three */
+/*  for elements having "Blue" inside its title" */
+img[title~="blue"] {
+    border: 5px solid green;
+}
+
+/*  excercise four */
+/*  blue at the beginning of the title */
+img[title^="blue"] {
+    border-style: dotted;
+}
+
+/*  exercise five */
+/*  end of the title */
+img[title$="flower"] {
+    border-width: thick;
+}
+
+/*  exercise six */
+/*  if it contains flower, so also flowers will be formatted */
+img[title*="flower"] {
+    border: 5px solid green;
+}
