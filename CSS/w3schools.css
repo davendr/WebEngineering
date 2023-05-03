@@ -571,3 +571,26 @@ body {
     background-color: yellow;
     background-clip: border-box;
 }
+
+
+/*  section twentyeight
+*   exercise one */
+h1 {
+    background-color: rgba(255, 0, 0, 1.0);
+}
+
+/*  exercise two */
+h1 {
+    background-color: hsl(0, 100%, 50%);
+}
+
+/*  excercise three */
+h1 {
+    background-color: hsla(0, 100%, 50%, 0.3);
+}
+
+/*  exercise four */
+h1 {
+    background-color: rgb(255,0,0);
+    opacity: 0.3;
+}
