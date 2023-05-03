@@ -625,3 +625,25 @@ div {
 div {
     background-image: radial-gradient(circle, white, blue)
 }
+
+
+/*  section thirty
+*   exercise one */
+h1 {
+    text-shadow: 2px 2px;
+}
+
+/*  exercise two */
+h1 {
+    text-shadow: 2px 2px 5px green;
+}
+
+/*  exercise three */
+h1 {
+    text-shadow: 2px 2px 5px green, 3px 3px 10px red;
+}
+
+/*  exercise four & five  */
+div {
+    box-shadow: 10px 10px red;
+}
