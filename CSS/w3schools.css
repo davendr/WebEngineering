@@ -686,3 +686,25 @@ p {
     font-family: sansation;
     src: url('sansation.bold.woff')
 }
+
+
+/*  section thirtythree
+*   exercise one & two */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+    transform: translate(100px, 200px);
+    transform: rotate(45deg);
+}
+
+/*  exercise three & four */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    border: 1px dotted purple;
+    transform: scale(0.5, 2);
+    transform: skew(20deg, 30deg);
+}
