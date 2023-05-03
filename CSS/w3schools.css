@@ -645,5 +645,44 @@ h1 {
 
 /*  exercise four & five  */
 div {
-    box-shadow: 10px 10px red;
+    box-shadow: 10px 10px rgb(174, 21, 21);
+}
+
+
+/*  section thirtyone
+*   exercise one */
+p {
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*  exercise two */
+p {
+    width: 150px;
+    border: 1px dotted #265bcd;
+    word-wrap: break-word;
+}
+
+/*  exercise three */
+p {
+    width: 150;
+    border: 1px solid #abc123;
+    word-break: break-all;
+}
+
+
+/*  section thirtytwo 
+*   exercise one */
+@font-face{
+    font-family: sansation;
+    src: url('sansation_light.woff');
+}
+
+/*  exercise two */
+@font-face{
+    font-family: sansation;
+    src: url('sansation.bold.woff')
 }
