@@ -708,3 +708,33 @@ div {
     transform: scale(0.5, 2);
     transform: skew(20deg, 30deg);
 }
+
+
+/*  section thirtyfour
+*   exercise one */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(241, 160, 132);
+    border: 1px dotted lightskyblue;
+    transform: rotateX(150deg);
+}
+
+/*  exercise two */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(195, 251, 152);
+    border: 1px dotted rgb(135, 250, 189);
+    transform: rotateZ(120deg);
+}
+
+/*  exercise three */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(222, 147, 222);
+    border: 1px dotted rgb(250, 227, 135);
+    transform: rotateY(90deg);
+}
+
