@@ -1,54 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full">
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
     <script src="https://unpkg.com/vue@3"></script>
-
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
-      body {
-        display: grid;
-        place-items: center;
-      }
-
-      .text-red {
-        color: red;
-      }
-
-      .text-green {
-        color: green;
-      }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
+  <body class="h-full grid place-items-center">
     <div id="app">
-      <!-- v-bind wants to bind the class to the result of the classes -->
-      <!-- <button v-bind:class="buttonClasses" v-on:click="toggle">Click me</button> -->
-      <button :class="active ? 'text-red' : ' text-green'" v-on:click="toggle">
-        Click me
-      </button>
+      <!-- v-show toggles the view of the object by the given condition -->
+      <section
+        v-show="assignments.filter(a => ! a.complete).length"
+        class="mt8"
+      >
+        <h2 class="font-bold mb-2">In Progress</h2>
+
+        <ul>
+          <!-- whenever looping, we need to set a key to say what unique item is selected -->
+          <li
+            v-for="assignment in assignments.filter(a => ! a.complete)"
+            :key="assignment.id"
+          >
+            <label>
+              {{ assignment.name }}
+              <input type="checkbox" v-model="assignment.complete" />
+            </label>
+          </li>
+        </ul>
+      </section>
+
+      <!-- this section will use the method below to do the toggle -->
+      <section v-show="completedAssignments.length">
+        <h2 class="font-bold mb-2">Completed tasks</h2>
+
+        <ul>
+          <li
+            v-for="assignment in assignments.filter(a => a.complete)"
+            :key="assignment.id"
+          >
+            <label>
+              {{ assignment.name }}
+              <input type="checkbox" v-model="assignment.complete" />
+            </label>
+          </li>
+        </ul>
+      </section>
     </div>
 
     <script>
-      Vue.createApp({
+      let app = {
         data() {
           return {
-            // buttonClasses: "text-green",
-            active: false,
+            assignments: [
+              { name: "Finish project", complete: false, id: 1 },
+              { name: "Read chapter 4 ", complete: false, id: 2 },
+              { name: "Turn in homework", complete: false, id: 3 },
+            ],
           };
         },
-        methods: {
-          toggle() {
-            <!-- this.buttonClasses = 'text-red'; would also work -->
-            this.active = !this.active;
+
+        computed: {
+          completedAssignments() {
+            return this.assignments.filter((assignment) => assignment.complete);
           },
         },
-      }).mount("#app");
+        computed: {
+          inProgressAssignments() {
+            return this.assignments.filter((assignment) => assignment.complete);
+          },
+        },
+      };
+
+      Vue.createApp(app).mount("#app");
     </script>
   </body>
 </html>
