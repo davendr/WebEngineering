@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src=""https://unpkg.com/vue@3"></script>
+
 </head>
+
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <!--vue just consists within that div-->
+    <!--greeting is set up in the script below-->
+    <div id="app">
+        {{ greeting }} ({{greeting.length}}) 
+    </div>
+
+    <script>
+        Vue.createApp({
+            data() {
+                return { 
+                    greeting: 'Hello World' 
+                };
+            }
+        }).mount('#app');
+    </script>
 
 </body>
+
 </html>
