@@ -12,25 +12,14 @@
       <app-button>Submit</app-button>
     </div>
 
-    <script>
-      // components are having the exact same structure as  the app.
+    <!--  this script is being treated like a module. It needs that to import the components from the .js-->
+    <script type="module">
+      //  importing from the Path
+      import AppButton from "./js/components/AppButton.js";
+
       let app = {
         components: {
-          "app-button": {
-            template: `
-              
-              <button class="bg-gray-200 hover:bg-gray-400 border rounded px-5
-              disabled:cursor-not-allowed" :disabled ="processing">
-                <slot />
-                </button>
-            `,
-
-            data() {
-              return {
-                processing: true,
-              };
-            },
-          },
+          "app-button": AppButton,
         },
       };
 
