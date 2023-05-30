@@ -9,65 +9,27 @@
 
   <body class="h-full grid place-items-center">
     <div id="app">
-      <!-- v-show toggles the view of the object by the given condition -->
-      <section
-        v-show="assignments.filter(a => ! a.complete).length"
-        class="mt8"
-      >
-        <h2 class="font-bold mb-2">In Progress</h2>
-
-        <ul>
-          <!-- whenever looping, we need to set a key to say what unique item is selected -->
-          <li
-            v-for="assignment in assignments.filter(a => ! a.complete)"
-            :key="assignment.id"
-          >
-            <label>
-              {{ assignment.name }}
-              <input type="checkbox" v-model="assignment.complete" />
-            </label>
-          </li>
-        </ul>
-      </section>
-
-      <!-- this section will use the method below to do the toggle -->
-      <section v-show="completedAssignments.length">
-        <h2 class="font-bold mb-2">Completed tasks</h2>
-
-        <ul>
-          <li
-            v-for="assignment in assignments.filter(a => a.complete)"
-            :key="assignment.id"
-          >
-            <label>
-              {{ assignment.name }}
-              <input type="checkbox" v-model="assignment.complete" />
-            </label>
-          </li>
-        </ul>
-      </section>
+      <app-button>Submit</app-button>
     </div>
 
     <script>
+      // components are having the exact same structure as  the app.
       let app = {
-        data() {
-          return {
-            assignments: [
-              { name: "Finish project", complete: false, id: 1 },
-              { name: "Read chapter 4 ", complete: false, id: 2 },
-              { name: "Turn in homework", complete: false, id: 3 },
-            ],
-          };
-        },
+        components: {
+          "app-button": {
+            template: `
+              
+              <button class="bg-gray-200 hover:bg-gray-400 border rounded px-5
+              disabled:cursor-not-allowed" :disabled ="processing">
+                <slot />
+                </button>
+            `,
 
-        computed: {
-          completedAssignments() {
-            return this.assignments.filter((assignment) => assignment.complete);
-          },
-        },
-        computed: {
-          inProgressAssignments() {
-            return this.assignments.filter((assignment) => assignment.complete);
+            data() {
+              return {
+                processing: true,
+              };
+            },
           },
         },
       };
