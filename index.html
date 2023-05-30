@@ -4,33 +4,50 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <script src="https://unpkg.com/vue@3"></script>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      .text-red {
+        color: red;
+      }
+
+      .text-green {
+        color: green;
+      }
+    </style>
   </head>
 
   <body>
-    <!--vue just consists within that div-->
-    <!--greeting is set up in the script below-->
     <div id="app">
-        <p>         <!-- v-model is binding the value of the input and listenes to updates -->
-            <input type="text" v-model="greeting">
-        </p>
-        <p>
-            {{ greeting }} ({{greeting.length}})</div>
-        </p>
+      <!-- v-bind wants to bind the class to the result of the classes -->
+      <!-- <button v-bind:class="buttonClasses" v-on:click="toggle">Click me</button> -->
+      <button :class="active ? 'text-red' : ' text-green'" v-on:click="toggle">
+        Click me
+      </button>
+    </div>
 
     <script>
       Vue.createApp({
         data() {
           return {
-            greeting: "Hello World !",
+            // buttonClasses: "text-green",
+            active: false,
           };
         },
-
-        <!-- vue updates after 3s to changed -->
-        mounted() {
-          setTimeout(() => {
-              this.greeting = "Changed";
-          }, 3000)
-        }
+        methods: {
+          toggle() {
+            <!-- this.buttonClasses = 'text-red'; would also work -->
+            this.active = !this.active;
+          },
+        },
       }).mount("#app");
     </script>
   </body>
