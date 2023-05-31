@@ -7,6 +7,9 @@
 
 > Learning Web Engineering with HTML, CSS & Vue.js
 
+npx serve - will start the applications
+npx json-server db.json -p 3001 - this will run the Server on port3001
+
 ## License
 
 Copyright (c) Dejvi Ndreka. All rights reserved.
