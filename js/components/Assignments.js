@@ -18,11 +18,7 @@ export default {
 
   data() {
     return {
-      assignments: [
-        { name: "Finish project", complete: false, id: 1, tag: "math" },
-        { name: "Read chapter 4 ", complete: false, id: 2, tag: "science" },
-        { name: "Turn in homework", complete: false, id: 3, tag: "math" },
-      ],
+      assignments: [],
     };
   },
 
@@ -30,13 +26,21 @@ export default {
     filters() {
       return {
         inProgress: this.assignments.filter(
-          (assignment) => assignment.complete
-        ),
-        completed: this.assignments.filter(
           (assignment) => !assignment.complete
         ),
+        completed: this.assignments.filter(
+          (assignment) => assignment.complete),
       };
     },
+  },
+
+  created() {
+    //  here is where we use the database data to fill it into the html / props
+    fetch("http://localhost:3001/assignments")
+      .then((response) => response.json())
+      .then((assignments) => {
+        this.assignments = assignments;
+      });
   },
 
   methods: {
