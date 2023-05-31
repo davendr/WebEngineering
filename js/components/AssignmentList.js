@@ -12,10 +12,9 @@ export default {
       <span>({{ assignments.length }})</span></h2>
 
       <assignment-tags 
-        :initialTags="assignments.map(a => a.tag)"
-        :current-tag= "currentTag"
-        @change="currentTag = $event" />
-          <!--    inline we can use $event to capture the variable -->
+        v-model:modelTag="currentTag"
+        :initialTags="assignments.map(a => a.tag)">
+      </assignment-tags>
 
     <!--     this devide-y figures out what the borders of each assignment should be -->
     <ul class="border border-gray-600 divide-y divide-gray-600 mt-3">
