@@ -19,9 +19,9 @@ export default {
   data() {
     return {
       assignments: [
-        { name: "Finish project", complete: false, id: 1 },
-        { name: "Read chapter 4 ", complete: false, id: 2 },
-        { name: "Turn in homework", complete: false, id: 3 },
+        { name: "Finish project", complete: false, id: 1, tag: "math" },
+        { name: "Read chapter 4 ", complete: false, id: 2, tag: "science" },
+        { name: "Turn in homework", complete: false, id: 3, tag: "math" },
       ],
     };
   },
@@ -39,7 +39,8 @@ export default {
     },
   },
 
-  methods: {  // the parent communicates through props. So it takes the data through the probs from AssignmentCreate and pushes it into the List.
+  methods: {
+    // the parent communicates through props. So it takes the data through the probs from AssignmentCreate and pushes it into the List.
     add(name) {
       this.assignments.push({
         name: name,
