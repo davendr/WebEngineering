@@ -1,11 +1,13 @@
 import Assignment from "./Assignment.js";
 import AssignmentTags from "./AssignmentTags.js";
+import Panel from "./Panel.js";
 
 export default {
-  components: { Assignment, AssignmentTags },
+  components: { Assignment, AssignmentTags, Panel },
 
   template: `
-    <section v-show="assignments.length" class="w-60">
+<!--    I can Use my prefixed Panel like a section or any else!! -->  
+    <Panel v-show="assignments.length" class="w-60">
     <div class="flex justify-between items-start">
 
       <h2 class="font-bold mb-2"> 
@@ -13,10 +15,7 @@ export default {
         <span>({{ assignments.length }})</span>
       </h2>
 
-      <!-- &times, is a close X button logo -->
-      <button  
-      v-show="canToggle"
-      @click="$emit('toggle')">&times;</button>
+      <button v-show="canToggle" @click="$emit('toggle')">&times;</button>
     </div>
 
       <assignment-tags 
@@ -34,7 +33,12 @@ export default {
     </ul>
 
     <slot></slot>
-  </section>
+
+<!--    this is the same as v-slot -->
+    <template #footer>
+      my footer goes here
+    </template>
+  </panel>
     
     `,
 

@@ -8,11 +8,13 @@ export default {
   template: `
 
   <section class="flex gap-8">
-    <assignment-list :assignments="filters.inProgress" title="In Progress">
+    <assignment-list 
+    :assignments="filters.inProgress" 
+    title="In Progress">
     <assignment-create @add='add'></assignment-create>
     </assignment-list>
 
-    <!-- Only show this component is show is completed -->
+    <!-- Only show this component if showCompleted is completed -->
     <div v-show="showCompleted">
     <assignment-list 
     :assignments="filters.completed" 
