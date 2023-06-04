@@ -1,5 +1,10 @@
-<script setup></script>
+<script setup>
+import Quiz from '@/components/Quiz/MyQuiz.vue'
+import { state } from '@/stores/quizStore.js'
+</script>
 
 <template>
-  <main></main>
+  <main>
+    <Quiz :quiz="state" />
+  </main>
 </template>
